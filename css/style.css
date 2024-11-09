@@ -8,9 +8,12 @@ Do not remove the back-link in this web template
 @import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700'); 
 @import url('font-awesome.css');  
 @import url('animate.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Work+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+
 
 body {
-	font-family:'Open Sans', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif; 
 	font-size:14px;
 	font-weight:300;
 	line-height:1.6em;
@@ -27,7 +30,7 @@ a:active {
 }
 
 h1,h2, h3, h4, h5, h6 {
-	font-family:'Open Sans', Arial, sans-serif;
+	font-family:'Allerta', Arial, sans-serif;
 	font-weight:700;
 	line-height:1.1em;
 	color:#333;
@@ -71,11 +74,19 @@ header .navbar {
 }
 
 .navbar-default {
+	background-color: #101B42; /*navbar background color */
     border: none;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: #FFF; /* Set the default text color to white */
+    text-shadow: none; /* Remove any text shadow */
+    border: 1px solid rgba(255, 255, 255, 0) !important; /* Ensure no border */
+}
+
 .navbar-brand {
-    color: #222;
+	font-family: 'Work Sans', Arial, sans-serif;
+    color: #101B42;
 	text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
@@ -94,9 +105,16 @@ header .navbar-collapse  ul.navbar-nav {
 }
 
 header .navbar-default{
-    background-color: #222222;
+    background-color: #101B42;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.44);	
+}
+
+header .nav li a {
+    font-family: 'Work Sans', Arial, sans-serif;
+	color: #FFF;
+    text-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0) !important;
 }
 
 header .nav li a:hover,
@@ -227,7 +245,7 @@ header ul.nav li ul li a {
 
 .navbar .nav a:hover {
 	background:none;
-	color: #E9931B !important;
+	color: #FFC800 !important;
 }
 
 .navbar .nav > .active > a,.navbar .nav > .active > a:hover {
@@ -265,8 +283,15 @@ header ul.nav li ul li ul {
   border-bottom-color: none;
   content:none;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-color: #E9931B;  
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+	color: #FFC800; /* Set the active text color to #FFC800 */
+    background-color: transparent; /* Ensure the background is transparent */
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FFF; /* Set hovered text color to white */
 }
 
 
@@ -518,7 +543,6 @@ color:#428bca
 	margin:0;
 	padding:0;
 	color:#2FADDE;
-	background: url('../img/slides/3.jpg') 0px -343px no-repeat;
 	padding: 45px 0;
 	background-size: cover;
 }
@@ -570,7 +594,6 @@ section#inner-headline:after {
   margin: 0;
   padding: 0;
   color: #2FADDE;
-  background: url('../img/slides/3.jpg') 0px -343px no-repeat;
   padding: 45px 0;
   background-size: cover;
   position: relative;
