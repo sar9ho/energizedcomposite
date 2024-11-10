@@ -18,7 +18,7 @@ body {
 	font-weight:300;
 	line-height:1.6em;
 	color:#656565;
-	background-color: #F9F9F9;
+	background-color: white;
 }
 
 a:active {
@@ -41,6 +41,15 @@ h1,h2, h3, h4, h5, h6 {
 	padding:0 20px 0 20px;
 	position:relative;
 }
+
+img.custom-img {
+    max-width: 30%;
+    width: 50%;
+    height: auto;
+    display: block;
+	margin: 20px auto 0; /* Adjust this value to move the image down */
+}
+
 
 #wrapper{
 	width:100%;
@@ -73,6 +82,10 @@ header .navbar {
     margin-bottom: 0;
 }
 
+.navbar {
+    min-height: 50px; /* Adjust the overall height of the navbar */
+}
+
 .navbar-default {
 	background-color: #101B42; /*navbar background color */
     border: none;
@@ -82,6 +95,13 @@ header .navbar {
     color: #FFF; /* Set the default text color to white */
     text-shadow: none; /* Remove any text shadow */
     border: 1px solid rgba(255, 255, 255, 0) !important; /* Ensure no border */
+	
+}
+
+.navbar-nav > li > a {
+    padding-top: 15px; /* Adjust the padding for the links */
+    padding-bottom: 15px; /* Adjust the padding for the links */
+    line-height: 20px; /* Adjust the line-height to vertically center the links */
 }
 
 .navbar-brand {
@@ -435,7 +455,7 @@ border: 1px solid #F9F9F9;
 }
 .testimonial-area  .carousel-indicators .active{
 border: 1px solid #F9F9F9;
-background: #F9F9F9;}
+background: white;}
 section.callaction {
 	background:#fff;
 	padding:50px 0 0 0;
@@ -454,7 +474,7 @@ color:#428bca
 
 #content {
 	position:relative;
-	background:#F9F9F9;
+	background:white;
 	padding:50px 0 0px 0;
 }
 
@@ -1641,10 +1661,14 @@ article img.pull-right, article .align-right{
 	.navbar-brand {
 		margin-top: 10px;
 		border-bottom: none;
+		padding: 10px 15px; /* Adjust the padding of the brand logo */
+    	height: 50px; /* Ensure the brand logo fits within the navbar height */
+    	line-height: 30px;
 	}
 	.navbar-header {
 		margin-top: 20px;
 		border-bottom: none;
+		height: 50px;
 	}
 	
 	.navbar-nav {
