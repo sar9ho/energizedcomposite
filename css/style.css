@@ -8,14 +8,17 @@ Do not remove the back-link in this web template
 @import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700'); 
 @import url('font-awesome.css');  
 @import url('animate.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Work+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+
 
 body {
-	font-family:'Open Sans', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif; 
 	font-size:14px;
 	font-weight:300;
 	line-height:1.6em;
 	color:#656565;
-	background-color: #F9F9F9;
+	background-color: white;
 }
 
 a:active {
@@ -27,7 +30,7 @@ a:active {
 }
 
 h1,h2, h3, h4, h5, h6 {
-	font-family:'Open Sans', Arial, sans-serif;
+	font-family:'Allerta', Arial, sans-serif;
 	font-weight:700;
 	line-height:1.1em;
 	color:#333;
@@ -38,6 +41,15 @@ h1,h2, h3, h4, h5, h6 {
 	padding:0 20px 0 20px;
 	position:relative;
 }
+
+img.custom-img {
+    max-width: 30%;
+    width: 50%;
+    height: auto;
+    display: block;
+	margin: 20px auto 0; /* Adjust this value to move the image down */
+}
+
 
 #wrapper{
 	width:100%;
@@ -70,12 +82,31 @@ header .navbar {
     margin-bottom: 0;
 }
 
+.navbar {
+    min-height: 50px; /* Adjust the overall height of the navbar */
+}
+
 .navbar-default {
+	background-color: #101B42; /*navbar background color */
     border: none;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: #FFF; /* Set the default text color to white */
+    text-shadow: none; /* Remove any text shadow */
+    border: 1px solid rgba(255, 255, 255, 0) !important; /* Ensure no border */
+	
+}
+
+.navbar-nav > li > a {
+    padding-top: 15px; /* Adjust the padding for the links */
+    padding-bottom: 15px; /* Adjust the padding for the links */
+    line-height: 20px; /* Adjust the line-height to vertically center the links */
+}
+
 .navbar-brand {
-    color: #222;
+	font-family: 'Work Sans', Arial, sans-serif;
+    color: #101B42;
 	text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
@@ -94,9 +125,16 @@ header .navbar-collapse  ul.navbar-nav {
 }
 
 header .navbar-default{
-    background-color: #222222;
+    background-color: #101B42;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.44);	
+}
+
+header .nav li a {
+    font-family: 'Work Sans', Arial, sans-serif;
+	color: #FFF;
+    text-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0) !important;
 }
 
 header .nav li a:hover,
@@ -227,7 +265,7 @@ header ul.nav li ul li a {
 
 .navbar .nav a:hover {
 	background:none;
-	color: #E9931B !important;
+	color: #FFC800 !important;
 }
 
 .navbar .nav > .active > a,.navbar .nav > .active > a:hover {
@@ -265,8 +303,15 @@ header ul.nav li ul li ul {
   border-bottom-color: none;
   content:none;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-color: #E9931B;  
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+	color: #FFC800; /* Set the active text color to #FFC800 */
+    background-color: transparent; /* Ensure the background is transparent */
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FFF; /* Set hovered text color to white */
 }
 
 
@@ -410,7 +455,7 @@ border: 1px solid #F9F9F9;
 }
 .testimonial-area  .carousel-indicators .active{
 border: 1px solid #F9F9F9;
-background: #F9F9F9;}
+background: white;}
 section.callaction {
 	background:#fff;
 	padding:50px 0 0 0;
@@ -429,7 +474,7 @@ color:#428bca
 
 #content {
 	position:relative;
-	background:#F9F9F9;
+	background:white;
 	padding:50px 0 0px 0;
 }
 
@@ -518,7 +563,6 @@ color:#428bca
 	margin:0;
 	padding:0;
 	color:#2FADDE;
-	background: url('../img/slides/3.jpg') 0px -343px no-repeat;
 	padding: 45px 0;
 	background-size: cover;
 }
@@ -570,7 +614,6 @@ section#inner-headline:after {
   margin: 0;
   padding: 0;
   color: #2FADDE;
-  background: url('../img/slides/3.jpg') 0px -343px no-repeat;
   padding: 45px 0;
   background-size: cover;
   position: relative;
@@ -1618,10 +1661,14 @@ article img.pull-right, article .align-right{
 	.navbar-brand {
 		margin-top: 10px;
 		border-bottom: none;
+		padding: 10px 15px; /* Adjust the padding of the brand logo */
+    	height: 50px; /* Ensure the brand logo fits within the navbar height */
+    	line-height: 30px;
 	}
 	.navbar-header {
 		margin-top: 20px;
 		border-bottom: none;
+		height: 50px;
 	}
 	
 	.navbar-nav {
