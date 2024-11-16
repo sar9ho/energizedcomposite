@@ -51,10 +51,10 @@
 	<section id="featured">
 	 
 	<!-- Slider -->
-        <div id="main-slider" class="flexslider">
+        <!--<div id="main-slider" class="flexslider">
             <ul class="slides">
               <li>
-                <img src="img/slides/1.jpg" alt="" />
+				<img src="img/slides/slide1.jpg" alt="Stupid image that should be showing but isn't because html hates me" class="custom-img">
                 <div class="flex-caption">
                     <h3>Best UR MOMMMM LET'S see what this changes</h3> 
 					<p>Doloribus omnis minus temporibus perferendis ipsa architecto non.</p>  
@@ -75,7 +75,7 @@
                 </div>
               </li>
             </ul>
-        </div>
+        </div> -->
 	<!-- end slider -->
  
 	<!--</section>
@@ -120,10 +120,34 @@
 	</section> -->
 	<section id="content">
 	
-	
-	<div class="container">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Full-Page Image</title>
+			<style>
+				/* Style to make the image fit the entire page */
+				body {
+					margin: 0; /* Remove default margins */
+					padding: 0;
+				}
 		
-	     <div class="row">
+				.full-page-image {
+					/*background-image: url("img/slides/slide1.jpg");*/
+					background-image: url("img/slides/slide1.jpg");
+					background-size: cover; /* Scale the image to cover the entire area */
+					background-position: center; /* Center the image */
+					background-repeat: no-repeat; /* Prevent the image from repeating */
+					width: 100vw; /* Full width */
+					height: 100vh; /* Full height */
+				}
+			</style>
+		</head>
+		<body>
+			<!-- Full-page image container -->
+			<div class="full-page-image"></div>
+		</body>
+			<!--<img src="img/slides/slide1.jpg" alt="Stupid image that should be showing but isn't because html hates me" class="custom-img">-->
+	<div class="container">
 							<div class="col-md-7">
 								<!-- Heading and para -->
 								<div class="block-heading-two">
