@@ -19,6 +19,7 @@ body {
 	line-height:1.6em;
 	color:#656565;
 	background-color: white;
+	
 }
 
 a:active {
@@ -49,6 +50,24 @@ img.custom-img {
     display: block;
 	margin: 20px auto 0; /* Adjust this value to move the image down */
 }
+
+
+.middle-section {
+    position: relative;
+    width: 100; /* Ensure the section spans the full width of the viewport */
+    background-color: #101B42;
+    color: #FFF; /* Ensure text is readable */
+    padding: 20px 0;
+    margin: 0; /* Reset any margins */
+}
+
+.middle-section .container {
+	max-width: 100%; /* Occupy more space */
+	width: 100%; /* Expand the width */
+	margin: 0px; /* Adjust this value to center-align */
+	padding: 0 15px; /* Keep some padding inside */
+}
+
 
 
 #wrapper{
