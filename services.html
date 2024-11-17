@@ -3,10 +3,78 @@
 <head>
 <meta charset="utf-8">
 <title>Car Care Free Bootstrap HTML5 Templates | webthemez</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="" />
 <meta name="author" content="http://webthemez.com" />
- 
+<style> /* Container for each service block */
+/* Container for each service block */
+/* Adding padding to the container to prevent touching edges */
+/* Container for each service block */
+.container.content {
+    padding: 10px;
+}
+
+/* Make sure row containers have some spacing */
+.row {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Service item styling */
+.service-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.5s ease; /* Add transition to the whole block */
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, filter 0.5s ease; /* Smooth transition for both scaling and brightness */
+    border: 5px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Hover effect */
+.service-item:hover img {
+    filter: brightness(40%);
+    transform: scale(1.05); /* Slight zoom for more emphasis */
+    border-color: #ff6600; /* Change border color */
+}
+
+/* Service text to appear on hover */
+.service-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, font-size 0.5s ease;
+    font-size: 1.5em;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+/* Reveal text on hover */
+.service-item:hover .service-text {
+    opacity: 1;
+    font-size: 2em;
+}
+
+/* Service title below the image */
+.service-title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+</style>
+
 <link href="css/bootstrap.min.css" rel="stylesheet" />
 <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link href="css/jcarousel.css" rel="stylesheet" />
@@ -59,89 +127,123 @@
 	<section id="content">
 		<div class="container content">		
 <!-- Service Blocks -->
-<div class="row service-v1 margin-bottom-40">
-    <div class="col-md-4 md-margin-bottom-40">
-        <img class="img-responsive" src="img/service1.jpg" alt="Electric Vehicles">   
-        <h2>Electric Vehicles</h2>
-        <p>Enhances range and energy efficiency by integrating batteries into body panels.</p>        
+<div class="container content">
+    <!-- First Row -->
+    <div class="container content">
+        <div class="row">
+            <!-- Electric Vehicles Service Item -->
+            <div class="col-md-4 service-item">
+                <img class="img-responsive" src="img/service1.jpg" alt="Electric Vehicles">
+                <div class="service-text">
+                    <p>Enhances range and energy efficiency by integrating batteries into body panels.</p>
+                </div>
+                <div class="service-title">
+                    <h2>Electric Vehicles</h2>
+                </div>
+            </div>
+            <!-- Aerospace Service Item -->
+            <div class="col-md-4 service-item">
+                <img class="img-responsive" src="img/service2.jpeg" alt="Aerospace">
+                <div class="service-text">
+                    <p>Lightens aircraft and satellites while powering onboard systems.</p>
+                </div>
+                <div class="service-title">
+                    <h2>Aerospace</h2>
+                </div>
+            </div>      
+            <!-- Defense Service Item -->
+            <div class="col-md-4 service-item">
+                <img class="img-responsive" src="img/service3.jpg" alt="Defense">
+                <div class="service-text">
+                    <p>Boosts endurance for soldiers, drones, and vehicles.</p>
+                </div>
+                <div class="service-title">
+                    <h2>Defense</h2>
+                </div>
+            </div> 
+        </div>
+        <div class="row">
+            <!-- UAVs Service Item -->
+            <div class="col-md-4 service-item">
+                <img class="img-responsive" src="img/service4.jpg" alt="UAVs">
+                <div class="service-text">
+                    <p>Extends flight time with energy-storing structural units.</p>
+                </div>
+                <div class="service-title">
+                    <h2>UAVs</h2>
+                </div>
+            </div>
+            <!-- Consumer Electronics Service Item -->
+            <div class="col-md-4 service-item">
+                <img class="img-responsive" src="img/service6.jpg" alt="Consumer Electronics">
+                <div class="service-text">
+                    <p>Enables lightweight, durable devices with built-in energy solutions.</p>
+                </div>
+                <div class="service-title">
+                    <h2>Consumer Electronics</h2>
+                </div>
+            </div>      
+            <!-- Disaster Relief Service Item -->
+            <div class="col-md-4 service-item">
+                <img class="img-responsive" src="img/service5.jpg" alt="Disaster Relief">
+                <div class="service-text">
+                    <p>Provides reliable power in remote or grid-compromised areas.</p>
+                </div>
+                <div class="service-title">
+                    <h2>Disaster Relief</h2>
+                </div>
+            </div> 
+        </div>
     </div>
-    <div class="col-md-4">
-        <img class="img-responsive" src="img/service2.jpg" alt="Aerospace">            
-        <h2>Aerospace</h2>
-        <p>Lightens aircraft and satellites while powering onboard systems.</p>        
-    </div>
-    <div class="col-md-4 md-margin-bottom-40">
-        <img class="img-responsive" src="img/service3.jpg" alt="Defense">  
-        <h2>Defense</h2>
-        <p>Boosts endurance for soldiers, drones, and vehicles.</p>        
-    </div>
-    <div class="col-md-4 md-margin-bottom-40">
-        <img class="img-responsive" src="img/service4.jpg" alt="Renewable Energy">   
-        <h2>UAVs</h2>
-        <p>Extends flight time with energy-storing structural skins.</p>        
-    </div>
-    <div class="col-md-4">
-        <img class="img-responsive" src="img/service5.jpg" alt="Disaster Relief">            
-        <h2>Disaster Relief</h2>
-        <p>Provides reliable power in remote or grid-compromised areas.</p>        
-    </div>
-    <div class="col-md-4 md-margin-bottom-40">
-        <img class="img-responsive" src="img/service6.jpg" alt="Consumer Electronics">  
-        <h2>Consumer Electronics</h2>
-        <p>Enables lightweight, durable devices with built-in energy solutions.</p>        
-    </div>
-    <div class="col-md-4 md-margin-bottom-40">
-        <img class="img-responsive" src="img/service7.jpg" alt="Automotive Innovation">   
-        <h2>Automotive Innovation</h2>
-        <p>Meets the demand for sustainable, high-performance electric transportation.</p>        
+    
+    
+
+<!-- Adjusted Info Blocks with Proper Spacing -->
+<div class="container content" style="padding-left: 5px; padding-right: 5px;">
+    <div class="row">
+        <div class="col-sm-4 info-blocks">
+            <i class="icon-info-blocks fas fa-cogs"></i>
+            <div class="info-blocks-in">
+                <h3>Dual Functionality</h3>
+                <p>Our product offers both convenience and flexibility, allowing users to complete multiple tasks with ease in a seamless workflow.</p>
+            </div>
+        </div>
+        <div class="col-sm-4 info-blocks">
+            <i class="icon-info-blocks fas fa-fan"></i>
+            <div class="info-blocks-in">
+                <h3>Lightweight Design</h3>
+                <p>Built with portability in mind, the design ensures you can carry it anywhere without sacrificing functionality or performance.</p>
+            </div>
+        </div>
+        <div class="col-sm-4 info-blocks">
+            <i class="icon-info-blocks fas fa-shield-alt"></i>
+            <div class="info-blocks-in">
+                <h3>Safety</h3>
+                <p>Engineered with state-of-the-art safety measures to provide a secure user experience, ensuring your peace of mind.</p>
+            </div>
+        </div>
     </div>
 </div>
-<!-- End Service Blocks -->
-<hr class="margin-bottom-50">
-<!-- Info Blocks -->
-<div class="row">
-    <div class="col-sm-4 info-blocks">
-        <i class="icon-info-blocks fa fa-bell-o"></i>
-        <div class="info-blocks-in">
-            <h3>Dual Functionality</h3>
-            <p>Our product offers both convenience and flexibility, allowing users to complete multiple tasks with ease in a seamless workflow.</p>
-        </div>
-    </div>
-    <div class="col-sm-4 info-blocks">
-        <i class="icon-info-blocks fa fa-hdd-o"></i>
-        <div class="info-blocks-in">
-            <h3>Lightweight Design</h3>
-            <p>Built with portability in mind, the design ensures you can carry it anywhere without sacrificing functionality or performance.</p>
-        </div>
-    </div>
-    <div class="col-sm-4 info-blocks">
-        <i class="icon-info-blocks fa fa-lightbulb-o"></i>
-        <div class="info-blocks-in">
-            <h3>Safety</h3>
-            <p>Engineered with state-of-the-art safety measures to provide a secure user experience, ensuring your peace of mind.</p>
-        </div>
-    </div>
-</div>
-<!-- End Info Blocks -->
 
 <!-- Info Blocks -->
-<div class="row">
-    <div class="col-sm-4 info-blocks">
-        <i class="icon-info-blocks fa fa-code"></i>
-        <div class="info-blocks-in">
+<div class="container content" style="padding-left: 5px; padding-right: 5px;">
+    <div class="row">
+        <div class="col-sm-4 info-blocks">
+            <i class="icon-info-blocks fas fa-dumbbell"></i>
+            <div class="info-blocks-in">
             <h3>Superior Strength</h3>
             <p>Our product is constructed using high-quality materials that guarantee durability and resilience, even under challenging conditions.</p>
         </div>
     </div>
     <div class="col-sm-4 info-blocks">
-        <i class="icon-info-blocks fa fa-compress"></i>
+        <i class="icon-info-blocks fas fa-layer-group"></i>
         <div class="info-blocks-in">
             <h3>Scalability</h3>
             <p>Designed to grow with your needs, the system is easily scalable, ensuring optimal performance regardless of your workload size.</p>
         </div>
     </div>
     <div class="col-sm-4 info-blocks">
-        <i class="icon-info-blocks fa fa-html5"></i>
+        <i class="icon-info-blocks fas fa-exchange-alt"></i>
         <div class="info-blocks-in">
             <h3>Versatility</h3>
             <p>Supports a wide range of use cases, making it adaptable for various scenarios, whether personal, professional, or industrial.</p>
@@ -149,7 +251,8 @@
     </div>
 </div>
 <!-- End Info Blocks -->
-        
+<hr class="margin-bottom-50" style="width: 80%; margin: 0 auto;">
+
     </div>
     </section>
 	<footer>
