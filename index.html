@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Energized Composite Technologies - Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
+<meta name="description" content="Energized Composite Technologies: Advanced Structural Battery Solutions" />
 <meta name="author" content="http://webthemez.com" />
 <!-- css -->
 <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -13,16 +13,95 @@
 <link href="css/flexslider.css" rel="stylesheet" />
 <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet"> 
 <link href="css/style.css" rel="stylesheet" />
- 
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->	
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;400;500&display=swap');
+
+    body {
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    h1, h2 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+
+    .brains-behind, .callaction, .video-section, #content {
+        padding: 60px 0;
+        text-align: center;
+    }
+    .brains-behind h2, .callaction h1, #content h1 {
+        margin-bottom: 20px;
+    }
+    .brains-behind p, .callaction p, #content p {
+        font-size: 1.5em;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .brains-behind img {
+        max-width: 150px;
+        margin: 20px;
+    }
+    .navbar {
+        background: linear-gradient(135deg, #0b3d91, #1a237e);
+        border: none;
+    }
+    .navbar-nav li a {
+        color: white !important;
+        font-weight: bold;
+    }
+    .hero-section {
+        background: url('img/slide1.jpg') center center/cover no-repeat;
+        height: 400px;
+        position: relative;
+    }
+    .hero-text {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        color: white;
+        font-size: 4.5em;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .video-section {
+        padding: 60px 0;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+    .video-section iframe {
+        width: 50%;
+        height: 450px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+	.video-section p {
+    font-size: 1.5em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 }
+
+    .founders-section {
+        padding: 60px 0;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    .founders-section img {
+        max-width: 250px;
+        margin: 25px;
+        transition: transform 0.3s ease;
+    }
+    .founders-section img:hover {
+        transform: scale(1.1);
+    }
+</style>
 </head>
 <body>
 <div id="wrapper">
-	<!-- start header -->
-	<header>
+    <!-- Header -->
+    <header>
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -31,160 +110,67 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"/></a>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Energized Composite Technologies logo"/></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Home</a></li> 
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="services.html">Impact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Impact</a></li>
+						<li><a href="news.html">News</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-	</header>
-	<!-- end header -->
-	<section id="featured">
+    </header>
 
-		<!-- Slider -->
-        <div id="main-slider" class="flexslider">
-		<ul class="slides">
-			<li>
-			<img src="img/slide1.jpg" alt="" />
-			<div class="flex-caption" style="color: rgb(0, 128, 255);">
-				<h3>Energized Composite Technology</h3> 
-				<!--<p>Doloribus omnis minus temporibus perferendis ipsa architecto non.</p>  -->
-			</div>
-			</li>
-		</ul>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">Energized Composite Technologies</div>
+    </section>
+
+    <!-- Mission and How We Achieve It Section -->
+    <section class="callaction">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Our <span class="blue_text">Mission</span></h1>
+                    <p>We revolutionize energy storage by creating lightweight, multifunctional structural batteries that seamlessly integrate into vehicles and equipment. Our solutions enhance performance, reduce weight, and extend capabilities across military, aerospace, and commercial sectors.</p>
+                </div>
+                <div class="col-md-6">
+                    <h1>How We Achieve It</h1>
+                    <p>Through groundbreaking innovations in carbon fiber-reinforced plastics, we engineer energized structural batteries that combine superior strength with exceptional energy efficiency. By replacing standalone batteries, we deliver lighter, safer, and more sustainable solutions for even the most demanding environments.</p>
+                </div>
+            </div>
         </div>
-	<!-- end slider -->
+    </section>
 
-	
-	</section>
-	<section class="callaction">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-7">
-				<div><h1><span>Our<span class="blue_text"> Mission</span></span></h1><span class="clear spacer_responsive_hide_mobile " style="height:13px;display:block;"></span><p>We revolutionize energy storage by creating lightweight, multifunctional structural batteries that seamlessly integrate into vehicles and equipment. Our solutions enhance performance, reduce weight, and extend capabilities across military, aerospace, and commercial sectors.</p>
-				</div>
-			</div>
-		</div>
-		
-	</div>
-	</section>
-	<section id="content">
-	
-	
-	<div class="container">
-		
-	     <div class="row">
-							<div class="col-md-7" style="margin-left: 500px;">
-								<!-- Heading and para -->
-								<div class="block-heading-two">
-									<h1><span>How We Achieve It</span></h1>
-								</div>
-								<p>Through groundbreaking innovations in carbon fiber-reinforced plastics, we engineer energized structural batteries that combine superior strength with exceptional energy efficiency. By replacing standalone batteries, we deliver lighter, safer, and more sustainable solutions for even the most demanding environments.</p>
-												
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-5">
-                 
-                    </div>
-	
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="content">
+            <h2>Watch our Technology in Action</h2>
+			<p>Video Coming Soon:</p>
+            <iframe src="https://www.youtube.com/embed/example" allowfullscreen></iframe>
+        </div>
+    </section>
 
-						</div>
-	
-	  <div class="row">
-		  </div>
-	</div>
-	
-
-	<!--<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="widget">
-					 <h5 class="widgetheading">Our Contact</h5>
-					<address>
-					<strong>Target company Inc</strong><br>
-					JC Main Road, Near Silnile tower<br>
-					 Pin-21542 NewYork US.</address>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">Quick Links</h5>
-					<ul class="link-list">
-						<li><a href="#">Latest Events</a></li>
-						<li><a href="#">Terms and conditions</a></li>
-						<li><a href="#">Privacy policy</a></li>
-						<li><a href="#">Career</a></li> -->
-						<!--<li><a href="#">Contact us</a></li> -->
-						<!-- <li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">Latest posts</h5>
-					<ul class="link-list">
-						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">Recent News</h5>
-					<ul class="link-list">
-						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="sub-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="copyright">
-						<p>
-							<span>&copy; Car Care 2015 All right reserved. By </span><a href="http://webthemez.com" target="_blank">WebThemez</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<ul class="social-network">
-						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-					</ul> 
-				</div>
-			</div>
-		</div>
-	</div>
-	</footer> -->
+    <!-- Founders Section -->
+    <section class="founders-section">
+        <div class="container">
+            <h2>Our Founders</h2>
+            <img src="img/NASAworm.jpeg" alt="NASA Logo">
+            <img src="img/ucflogo.png" alt="University of Central Florida Logo">
+        </div>
+    </section>
 </div>
-<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-<!-- javascript
-    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+
+<!-- Scripts -->
 <script src="js/jquery.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script> 
-<script src="js/portfolio/jquery.quicksand.js"></script>
-<script src="js/portfolio/setting.js"></script>
 <script src="js/jquery.flexslider.js"></script>
-<script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/owl-carousel/owl.carousel.js"></script>
 </body>
 </html>
