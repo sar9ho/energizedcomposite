@@ -52,6 +52,57 @@
     .news-list a:hover {
         text-decoration: underline;
     }
+    .news-item {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px;  /* Increased padding */
+    margin-bottom: 15px;  /* More spacing between news items */
+    border-radius: 8px;  /* Slightly larger border radius */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+    width: 100%;
+}
+
+.news-thumbnail {
+    width: 140px; /* Increased image size */
+    height: 140px;
+    border-radius: 8px;
+    margin-right: 20px; /* More space between image and text */
+    object-fit: cover;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Makes sure content takes up remaining space */
+}
+
+.news-title {
+    font-size: 1.4em;  /* Bigger title */
+    font-family: 'Orbitron', sans-serif;
+    color: #0b3d91;
+    font-weight: bold;
+    margin-bottom: 8px; /* More spacing between title and snippet */
+}
+
+.news-snippet {
+    font-size: 1.1em; /* Bigger text for readability */
+    color: #444;
+    line-height: 1.5;
+}
+
+.news-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.news-item a:hover .news-title {
+    text-decoration: underline;
+}
+
+
 </style>
 </head>
 <body>
@@ -81,10 +132,36 @@
         <div class="container">
             <h1>Latest News & Media</h1>
             <ul class="news-list" id="news-container">
-                <!-- News items will be dynamically loaded here -->
-            </ul>
+                <li class="news-item">
+                    <a href="https://www.compositesworld.com/news/ucf-nasa-researchers-design-charged-composite-power-suits-for-electric-vehicles-and-spacecraft" target="_blank">
+                        <img src="img/thumbnail1.jpeg" alt="UCF NASA Composite Power Suit" class="news-thumbnail">
+                        <div class="news-content">
+                            <span class="news-title">UCF, NASA Researchers Design Charged Composite Power Suits for EVs & Spacecraft</span>
+                            <p class="news-snippet">
+                                Researchers from UCF and NASA are developing a new composite material capable of conducting and storing energy, which could revolutionize space travel and electric vehicles.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>            
         </div>
     </section>
+    <!-- to add more NEWS ARTICLES, edit the link, title, snippet, and thumbnail in the sections surrounded by {{}} below -->
+            <!-- <ul class="news-list" id="news-container">
+                <li class="news-item">
+                    <a href="https://www.compositesworld.com/news/ucf-nasa-researchers-design-charged-composite-power-suits-for-electric-vehicles-and-spacecraft" target="_blank">
+                        <img src="img/{{thumbnail}}.jpeg" alt="{{INSERT TITLE}}="news-thumbnail">
+                        <div class="news-content">
+                            <span class="news-title">{{INSERT TITLE}}</span>
+                            <p class="news-snippet">
+                                {{INSERT BRIEF ARTICLE SNIPPER}}.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>            
+        </div>
+    </section> -->
 
     <!-- Footer -->
     <footer>
