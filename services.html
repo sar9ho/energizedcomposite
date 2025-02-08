@@ -72,6 +72,24 @@
     font-weight: bold;
     margin-top: 10px;
 }
+footer {
+    width: 100vw; /* Ensures it spans the full viewport width */
+    background-color: #222; /* Dark background color */
+    color: #ccc; /* Light grey text */
+    padding: 20px 0; /* Top and bottom padding for spacing */
+    text-align: center; /* Center the text */
+    margin: 0; /* No extra margins */
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+body, html {
+    margin: 0; /* Remove default browser margins */
+    padding: 0; /* Remove default browser padding */
+    width: 100%; /* Ensure the body spans the full width */
+    overflow-x: hidden; /* Prevent horizontal scrolling caused by overflow */
+}
+
+
+
 
 </style>
 
@@ -107,6 +125,7 @@
                         <li><a href="index.html">Home</a></li> 
 						<li><a href="about.html">About Us</a></li>
 						<li class="active"><a href="services.html">Impact</a></li>
+                        <li><a href="news.html">News</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -123,8 +142,105 @@
 	</div>
 	</section>
 	<section id="content">
-		<div class="container content">		
-<!-- Service Blocks -->
+		<div class="container content">	
+            
+            <section id="content">
+                <div class="container">
+                                <div class="about">
+                                
+                                    <div class="row"> 
+                                        <div class="col-md-6">
+                                            <img src="img/theproblem.png" alt="Image description" class="custom-img">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="about-logo">
+                                                <h3>The Problem</h3>
+                                                <p>Current energy storage systems are heavy, inefficient, and often unsafe, limiting mobility and performance in vehicles, aerospace, and defense applications. Integrating energy storage directly into structural components has remained a challenge—until now.</p>
+                                            </div>
+                
+                                        </div>
+                    
+                                        </div>
+                                        <!--beg-->
+                                        <div class="row"> 
+            
+                                            <div class="col-md-6">
+                                                <div class="about-logo">
+                                                    <h3>Our Solution</h3>
+                                                    <p>Energized Composite Technologies LLC has developed scalable carbon fiber-based structural batteries (eCFRP) that combine energy storage with load-bearing functionality. This cutting-edge solution addresses weight, safety, and efficiency challenges, transforming energy storage across industries.</p>
+                                                </div>
+                    
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="img/oursolution.png" alt="Image description" class="custom-img">
+                                            </div>
+                        
+                                            </div>
+                                        <!--end-->
+                                    </div>
+                                    
+                                    <hr>
+                                    <br>
+                                    
+                                    <div class="row">
+
+
+<!-- Adjusted Info Blocks with Proper Spacing -->
+<div class="container content" style="padding-left: 5px; padding-right: 5px;">
+    <div class="row">
+        <div class="col-sm-4 info-blocks">
+            <i class="icon-info-blocks fas fa-cogs"></i>
+            <div class="info-blocks-in">
+                <h3>Dual Functionality</h3>
+                <p>Our product offers both convenience and flexibility, allowing users to complete multiple tasks with ease in a seamless workflow.</p>
+            </div>
+        </div>
+        <div class="col-sm-4 info-blocks">
+            <i class="icon-info-blocks fas fa-fan"></i>
+            <div class="info-blocks-in">
+                <h3>Lightweight Design</h3>
+                <p>Built with portability in mind, the design ensures you can carry it anywhere without sacrificing functionality or performance.</p>
+            </div>
+        </div>
+        <div class="col-sm-4 info-blocks">
+            <i class="icon-info-blocks fas fa-shield-alt"></i>
+            <div class="info-blocks-in">
+                <h3>Safety</h3>
+                <p>Engineered with state-of-the-art safety measures to provide a secure user experience, ensuring your peace of mind.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Info Blocks -->
+<div class="container content" style="padding-left: 5px; padding-right: 5px;">
+    <div class="row">
+        <div class="col-sm-4 info-blocks">
+            <i class="icon-info-blocks fas fa-dumbbell"></i>
+            <div class="info-blocks-in">
+            <h3>Superior Strength</h3>
+            <p>Our product is constructed using high-quality materials that guarantee durability and resilience, even under challenging conditions.</p>
+        </div>
+    </div>
+    <div class="col-sm-4 info-blocks">
+        <i class="icon-info-blocks fas fa-layer-group"></i>
+        <div class="info-blocks-in">
+            <h3>Scalability</h3>
+            <p>Designed to grow with your needs, the system is easily scalable, ensuring optimal performance regardless of your workload size.</p>
+        </div>
+    </div>
+    <div class="col-sm-4 info-blocks">
+        <i class="icon-info-blocks fas fa-exchange-alt"></i>
+        <div class="info-blocks-in">
+            <h3>Versatility</h3>
+            <p>Supports a wide range of use cases, making it adaptable for various scenarios, whether personal, professional, or industrial.</p>
+        </div>
+    </div>
+</div>
+<!-- End Info Blocks -->
+
+
+                                        <!-- Service Blocks -->
 <div class="container content">
     <!-- First Row -->
     <div class="container content">
@@ -194,65 +310,13 @@
         </div>
     </div>
     
+
+</div>
+<footer>
+    <p>&copy; 2025 Energized Composite Technologies. All rights reserved.</p>
+</footer>
     
-
-<!-- Adjusted Info Blocks with Proper Spacing -->
-<div class="container content" style="padding-left: 5px; padding-right: 5px;">
-    <div class="row">
-        <div class="col-sm-4 info-blocks">
-            <i class="icon-info-blocks fas fa-cogs"></i>
-            <div class="info-blocks-in">
-                <h3>Dual Functionality</h3>
-                <p>Our product offers both convenience and flexibility, allowing users to complete multiple tasks with ease in a seamless workflow.</p>
-            </div>
-        </div>
-        <div class="col-sm-4 info-blocks">
-            <i class="icon-info-blocks fas fa-fan"></i>
-            <div class="info-blocks-in">
-                <h3>Lightweight Design</h3>
-                <p>Built with portability in mind, the design ensures you can carry it anywhere without sacrificing functionality or performance.</p>
-            </div>
-        </div>
-        <div class="col-sm-4 info-blocks">
-            <i class="icon-info-blocks fas fa-shield-alt"></i>
-            <div class="info-blocks-in">
-                <h3>Safety</h3>
-                <p>Engineered with state-of-the-art safety measures to provide a secure user experience, ensuring your peace of mind.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Info Blocks -->
-<div class="container content" style="padding-left: 5px; padding-right: 5px;">
-    <div class="row">
-        <div class="col-sm-4 info-blocks">
-            <i class="icon-info-blocks fas fa-dumbbell"></i>
-            <div class="info-blocks-in">
-            <h3>Superior Strength</h3>
-            <p>Our product is constructed using high-quality materials that guarantee durability and resilience, even under challenging conditions.</p>
-        </div>
-    </div>
-    <div class="col-sm-4 info-blocks">
-        <i class="icon-info-blocks fas fa-layer-group"></i>
-        <div class="info-blocks-in">
-            <h3>Scalability</h3>
-            <p>Designed to grow with your needs, the system is easily scalable, ensuring optimal performance regardless of your workload size.</p>
-        </div>
-    </div>
-    <div class="col-sm-4 info-blocks">
-        <i class="icon-info-blocks fas fa-exchange-alt"></i>
-        <div class="info-blocks-in">
-            <h3>Versatility</h3>
-            <p>Supports a wide range of use cases, making it adaptable for various scenarios, whether personal, professional, or industrial.</p>
-        </div>
-    </div>
-</div>
-<!-- End Info Blocks -->
-<hr class="margin-bottom-50" style="width: 80%; margin: 0 auto;">
-
-    </div>
-    </section>
+    
 	<!-- <footer>
 	<div class="container">
 		<div class="row">

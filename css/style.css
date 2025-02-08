@@ -44,8 +44,8 @@ h1,h2, h3, h4, h5, h6 {
 }
 
 img.custom-img {
-    max-width: 30%;
-    width: 50%;
+    max-width: 100%;
+    width: 70%;
     height: auto;
     display: block;
 	margin: 20px auto 0; /* Adjust this value to move the image down */
@@ -131,7 +131,7 @@ header .navbar {
     font-weight: 700;
     line-height: 1em;
 	letter-spacing: -1px;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 0 0 0 15px;
 }
 .navbar-default .navbar-brand{
@@ -363,6 +363,8 @@ display: inline-block;
 ==================================== */
 /* --- flexslider --- */
 
+
+
 #featured .flexslider {
 	padding:0;  
 	background: #fff; 
@@ -377,7 +379,7 @@ right:0px;
 }
 .flex-caption {zoom: 1;
 bottom: 35px; background-color:transparent; color: #fff; margin: 0; padding: 25px 25px 25px 30px; position: absolute; left: 20%; }
-.flex-caption h3 {color: #E9931B; font-size: 39px;  margin-bottom: 8px; text-transform: uppercase; font-weight: 900;text-shadow: 0px 1px 1px #000;background-color: rgba(0, 0, 0, 0.71);display: inline;padding: 20px;}
+.flex-caption h3 {color: #FFC800; font-size: 39px;  margin-bottom: 8px; text-transform: uppercase; font-weight: 900;text-shadow: 0px 1px 1px #000;background-color: rgba(0, 0, 0, 0.71);display: inline;padding: 20px;}
 .flex-caption p {margin: 0 0 15px; color: #FFF;font-size: 16px!important;display: inline-block;padding: 25px;background-color: rgba(0, 0, 0, 0.71);}
 .skill-home{
 margin-bottom:50px;

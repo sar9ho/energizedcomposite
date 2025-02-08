@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>News & Media - Energized Composite Technologies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Stay updated with the latest news and media from Energized Composite Technologies." />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;400;500&display=swap');
+
+    body {
+        font-family: 'Rajdhani', sans-serif;
+    }
+
+    h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2.5em;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .news-section {
+        padding: 60px 20px;
+    }
+
+    .news-list {
+        list-style: none;
+        padding: 0;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .news-list li {
+        background: #f9f9f9;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-list a {
+        font-size: 1.2em;
+        font-family: 'Orbitron', sans-serif;
+        text-decoration: none;
+        color: #0b3d91;
+        display: block;
+    }
+
+    .news-list a:hover {
+        text-decoration: underline;
+    }
+    .news-item {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 20px;  /* Increased padding */
+    margin-bottom: 15px;  /* More spacing between news items */
+    border-radius: 8px;  /* Slightly larger border radius */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+    width: 100%;
+}
+
+.news-thumbnail {
+    width: 140px; /* Increased image size */
+    height: 140px;
+    border-radius: 8px;
+    margin-right: 20px; /* More space between image and text */
+    object-fit: cover;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Makes sure content takes up remaining space */
+}
+
+.news-title {
+    font-size: 1.4em;  /* Bigger title */
+    font-family: 'Orbitron', sans-serif;
+    color: #0b3d91;
+    font-weight: bold;
+    margin-bottom: 8px; /* More spacing between title and snippet */
+}
+
+.news-snippet {
+    font-size: 1.1em; /* Bigger text for readability */
+    color: #444;
+    line-height: 1.5;
+}
+
+.news-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.news-item a:hover .news-title {
+    text-decoration: underline;
+}
+
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+    <!-- Header -->
+    <header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Energized Composite Technologies logo"/></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li> 
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Impact</a></li>
+                        <li class="active"><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <h1>Latest News & Media</h1>
+            <ul class="news-list" id="news-container">
+                <li class="news-item">
+                    <a href="https://www.compositesworld.com/news/ucf-nasa-researchers-design-charged-composite-power-suits-for-electric-vehicles-and-spacecraft" target="_blank">
+                        <img src="img/thumbnail1.jpeg" alt="UCF NASA Composite Power Suit" class="news-thumbnail">
+                        <div class="news-content">
+                            <span class="news-title">UCF, NASA Researchers Design Charged Composite Power Suits for EVs & Spacecraft</span>
+                            <p class="news-snippet">
+                                Researchers from UCF and NASA are developing a new composite material capable of conducting and storing energy, which could revolutionize space travel and electric vehicles.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>            
+        </div>
+    </section>
+    <!-- to add more NEWS ARTICLES, edit the link, title, snippet, and thumbnail in the sections surrounded by {{}} below -->
+            <!-- <ul class="news-list" id="news-container">
+                <li class="news-item">
+                    <a href="https://www.compositesworld.com/news/ucf-nasa-researchers-design-charged-composite-power-suits-for-electric-vehicles-and-spacecraft" target="_blank">
+                        <img src="img/{{thumbnail}}.jpeg" alt="{{INSERT TITLE}}="news-thumbnail">
+                        <div class="news-content">
+                            <span class="news-title">{{INSERT TITLE}}</span>
+                            <p class="news-snippet">
+                                {{INSERT BRIEF ARTICLE SNIPPER}}.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>            
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p style="text-align: center; margin: 20px 0;">&copy; 2025 Energized Composite Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Scripts -->
+<script>
+    // Dynamically load news items from news.json
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('news.json')
+            .then(response => response.json())
+            .then(data => {
+                const newsContainer = document.getElementById('news-container');
+                data.forEach(item => {
+                    const newsItem = document.createElement('li');
+                    newsItem.innerHTML = `
+                        <a href="${item.link}" target="_blank">${item.title}</a>
+                    `;
+                    newsContainer.appendChild(newsItem);
+                });
+            })
+            .catch(error => console.error('Error loading news:', error));
+    });
+</script>
+</body>
+</html>
