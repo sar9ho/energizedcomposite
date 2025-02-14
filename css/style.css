@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;400;500&display=swap');
+
 /* General Styles */
 body {
     font-family: 'Inter', Arial, sans-serif;
@@ -325,3 +327,53 @@ footer {
     background-color: #E6B500; /* Slightly darker yellow on hover */
     transform: scale(1.05); /* Slight grow effect */
 }
+
+
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2em;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    font-size: 1.1em;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.btn-primary {
+    background-color: #0b3d91;
+    border: none;
+    font-size: 1.2em;
+    font-family: 'Orbitron', sans-serif;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff6600;
+}
+
