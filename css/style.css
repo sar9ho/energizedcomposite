@@ -269,19 +269,37 @@ footer {
 }
 
 .container.content {
-	margin-left: -10px; /* Moves everything slightly to the left */
-    padding-left: 50px; /* Adjust padding to prevent cutting off */
+    max-width: 1200px;
+    margin: 0 auto; /* Ensure it's centered */
+    padding: 20px;
 }
 
 .row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .service-item, .info-blocks {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px; /* Adds equal spacing */
+}
+
+.info-blocks-in {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .about-logo {
