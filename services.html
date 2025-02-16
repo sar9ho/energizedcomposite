@@ -20,8 +20,16 @@
 /* General Styling */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;400;500&display=swap');
 
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
     body {
         font-family: 'Rajdhani', sans-serif;
+        position: relative;
+        will-change: transform;
     }
 
     h1, h2, h3 {
@@ -129,6 +137,8 @@
 </head>
 <body id="wrapper">
 
+    
+
     <!-- Header -->
     <header>
         <div class="navbar navbar-default navbar-static-top">
@@ -199,7 +209,6 @@
                 </div>
 
             <hr>
-
             <!-- Info Blocks Section -->
             <div class="container content">
                 <div class="row text-center">
@@ -319,6 +328,7 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
+
 
 </body>
 </html>
