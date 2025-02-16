@@ -123,6 +123,42 @@
     .carousel-control:hover {
         opacity: 0.8;
     }
+    .news-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background: #f4f4f4;
+        border-top: 3px solid #ddd;
+    }
+    .news-content {
+        flex: 1;
+    }
+    .news-section h3 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    .news-item {
+        margin-bottom: 15px;
+        padding: 10px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .news-item a {
+        text-decoration: none;
+        color: #007BFF;
+        font-weight: bold;
+    }
+    .news-image {
+        flex: 1;
+        text-align: right;
+    }
+    .news-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
 </style>
 </head>
 <body>
@@ -215,8 +251,14 @@
             </div>
         </div>
     </section>
-
-    <!-- Video Section -->
+    <section class="news-section">
+        <div class="news-content">
+            <h3>Latest News</h3>
+            <div id="news-container">
+                <!-- Only the top news item will be inserted here -->
+            </div>
+        </div>
+            <!-- Video Section -->
     <section class="video-section">
         <div class="content">
             <h2>Watch our Technology in Action</h2>
@@ -224,6 +266,61 @@
             <iframe src="https://www.youtube.com/embed/example" allowfullscreen></iframe>
         </div>
     </section>
+    </section>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch('news.html')
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data, 'text/html');
+                const newsItems = doc.querySelectorAll('.news-item');
+                
+                if (newsItems.length > 0) {
+                const topNews = newsItems[0];
+                const title = topNews.querySelector('.news-title').textContent;
+                const link = topNews.querySelector('a').href;
+                const thumbnailElement = topNews.querySelector('img');
+                const snippet = topNews.querySelector('.news-snippet').textContent;
+
+                // Ensure thumbnail is correctly extracted
+                let thumbnail = '';
+                if (thumbnailElement) {
+                    thumbnail = new URL(thumbnailElement.getAttribute('src'), window.location.origin).href;
+                    console.log("Extracted Thumbnail URL:", thumbnail); // Debugging log
+                }
+
+                // Inject news content
+                const newsContainer = document.getElementById("news-container");
+                const newsDiv = document.createElement("div");
+                newsDiv.classList.add("news-item");
+                newsDiv.innerHTML = `
+                    <a href="${link}">
+                        <h4>${title}</h4>
+                    </a>
+                    <p>${snippet}</p>
+                `;
+                newsContainer.appendChild(newsDiv);
+
+                // ✅ Set the thumbnail image on the homepage
+                if (thumbnail) {
+                    document.getElementById("news-thumbnail").src = thumbnail;
+                }
+            }
+        })
+        .catch(error => console.error('Error loading news:', error));
+});
+</script>
+    <!-- Video Section
+    <section class="video-section">
+        <div class="content">
+            <h2>Watch our Technology in Action</h2>
+			<p>Video Coming Soon:</p>
+            <iframe src="https://www.youtube.com/embed/example" allowfullscreen></iframe>
+        </div>
+    </section> -->
 
     <!-- Founders Section -->
     <section class="founders-section">
