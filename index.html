@@ -214,6 +214,18 @@ news-content {
     .video-container iframe {
         height: 250px;
     }}
+
+/* Center videos now that Latest News is disabled */
+.news-video-section {
+    justify-content: center;
+}
+
+.news-video-section .video-container {
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
 </style>
 </head>
 <body>
@@ -306,17 +318,16 @@ news-content {
             </div>
         </div>
     </section>
-       <!-- News & Video Section -->
-       <section class="news-video-section">
-        <!-- Latest News Section -->
+       <!-- Video Section -->
+    <section class="news-video-section">
+
+        <!-- Latest News temporarily disabled
         <div class="news-content">
             <h3>Latest News</h3>
-            <div id="news-container">
-                <!-- News items will be injected dynamically -->
-            </div>
+            <div id="news-container"></div>
         </div>
+        -->
 
-        <!-- Video Section -->
         <div class="video-container">
             <h3>Watch Our Technology in Action</h3>
             <div class="video-grid">
@@ -336,7 +347,7 @@ news-content {
     </section>
 </div>
 
-<script>
+<!-- <script>
     document.addEventListener("DOMContentLoaded", function() {
         fetch('news.html')
             .then(response => response.text())
@@ -372,7 +383,9 @@ news-content {
             })
             .catch(error => console.error('Error loading news:', error));
     });
-</script>
+</script> -->
+
+
     <!-- Video Section
     <section class="video-section">
         <div class="content">
