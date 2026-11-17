@@ -235,7 +235,7 @@ news-content {
                         <li class="active"><a href="index.html">Home</a></li> 
                         <!-- <li><a href="about.html">About Us</a></li> -->
                         <li><a href="services.html">Impact</a></li>
-						<li><a href="news.html">News</a></li>
+						<!-- <li><a href="news.html">News</a></li> -->
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -327,10 +327,10 @@ news-content {
                     <iframe src="https://www.youtube.com/embed/RlaP4wbeeyU" allowfullscreen></iframe>
                     Watch WESH 2 Coverage
                 </div>
-                <div class="video-wrapper">
+                <!-- <div class="video-wrapper">
                     <iframe src="https://www.fox35orlando.com/video/1048322" allowfullscreen></iframe>
                     Watch FOX 35 Orlando Coverage
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -343,12 +343,16 @@ news-content {
             .then(data => {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(data, 'text/html');
-                const newsItems = doc.querySelectorAll('.news-item');
+                const newsItems = Array.from(doc.querySelectorAll('.news-item'))
+                    .filter(item => {
+                        const title = item.querySelector('.news-title')?.textContent || '';
+                        return !title.includes('NASA announces their selections for small business');
+                    });
 
                 const newsContainer = document.getElementById("news-container");
                 newsContainer.innerHTML = ""; // Clear existing content
 
-                let maxItems = Math.min(newsItems.length, 3); // Show up to 3 news items
+                let maxItems = Math.min(newsItems.length, 2); // Show up to 2 news items
                 for (let i = 0; i < maxItems; i++) {
                     const news = newsItems[i];
                     const title = news.querySelector('.news-title').textContent;
